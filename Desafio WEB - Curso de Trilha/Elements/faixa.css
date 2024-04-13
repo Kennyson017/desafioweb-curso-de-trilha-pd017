@@ -1,0 +1,77 @@
+
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* AJUSTE DO SCROLL LATERAL */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* CONTEINER PAI */
+.text-wrapper {
+    display: flex;
+    padding: 2em 0;
+}
+
+/* FAIXA NÚMERO 1 */
+#text-wrapper1 {
+    background: #8C8635;
+}
+
+/* dark mode */
+.dark-mode #text-wrapper1 {
+    background: #5a5400;
+}
+
+
+/* TEXTO INTERNO DA FAIXA */
+.text-wrapper h1 {
+    white-space: nowrap;
+    font-family: 'play';
+    text-transform: uppercase;
+    display: inline;
+}
+
+/* TEXTO DA FAIXA NÚMERO 1 */
+#text-wrapper1 h1 {
+    color: #302d00;
+    font-size: 2.4em;
+    animation: animafaixa 5s linear infinite;
+}
+
+/* dark mode */
+.dark-mode #text-wrapper1 h1 {
+    color: #aaa129;
+}
+
+#text-wrapper1 img {
+    padding: 0 0.5em;
+}
+
+/* dark mode */
+.dark-mode #text-wrapper1 img{
+    filter: invert(100%);
+}
+
+/* ANIMAÇÃO */
+@keyframes animafaixa {
+    0% {
+        transform: translateX(0%);
+    } 100% {
+        transform: translate(-100%);
+    }
+}
+
+
+

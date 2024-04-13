@@ -1,0 +1,1037 @@
+ /*
+ Fontes Utilizadas na página:
+ "Trade Wins" - titúlos
+ "Play" - paragrafos
+ */
+
+ .trade-winds-regular {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+ 
+/* Estilizações de texto */
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4.8rem;
+    line-height: 100%;
+    font-family: "Trade Winds";
+    margin: 0;
+    display: block;
+    white-space: wrap;
+}
+
+h2 {
+    font-size: 4.2rem;
+    line-height: 100%;
+    font-family: "Trade Winds";
+    margin: 0;
+    white-space: wrap;
+}
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 100%;
+  font-family: "Trade Winds";
+  margin: 0;
+  white-space: wrap;
+}
+
+h4 {
+  font-size: 3.2rem;
+  line-height: 100%;
+  font-family: "Trade Winds";
+  margin: 0;
+  white-space: wrap;
+}
+
+h5 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "play";
+  text-align: justify;
+  margin: 0;
+  padding-top: 1em;
+  white-space: wrap;
+}
+
+p {
+  font-size: 2.4rem;
+  line-height: auto;
+  font-family: "Play";
+  text-align: justify;
+  margin: 0;
+  display: block;
+  white-space: wrap;
+}
+
+p.p2 {
+  font-size: 2.2rem;
+  line-height: auto;
+}
+
+p.p3 {
+  font-size: 2rem;
+}
+
+/* Estilizações de Cor com Variaveis */
+
+:root {
+  --background-body: #F2F2F2;
+  --bg-gradient-home:linear-gradient(to left, rgba(242,242,242,0), rgba(242,242,242,0.0),rgba(242,242,242,1), rgba(242,242,242,1), rgba(242,242,242,1)), url(images/capa\ moto\ teste.jpg); 
+  --bg-gradient-home-mob:linear-gradient(to bottom, rgba(242,242,242,0), rgba(242,242,242,0.0),rgba(242,242,242,1), rgba(242,242,242,1), rgba(242,242,242,1)), url(images/capa\ moto\ teste.jpg); 
+  --bg-gradient-home-mob2:linear-gradient(to bottom, rgba(242,242,242,0), rgba(242,242,242,0.0), rgba(242,242,242,1),rgba(242,242,242,1), rgba(242,242,242,1), rgba(242,242,242,1)), url(images/capa\ moto\ teste.jpg); 
+  --bg-lead: url(images/shape-seta-divisoria.svg), linear-gradient(to right, #403B00, #8C8635);
+  --bg-depoimentos: linear-gradient(to left, rgba(166,90,46,0), rgba(166,90,46,0),rgba(166,90,46,0.75), rgba(166,90,46,1), rgba(166,90,46,1)), url(images/trilheiros.png);
+  --bg-depoimentos-mob: linear-gradient(to bottom, rgba(166,90,46,0), rgba(166,90,46,0),rgba(166,90,46,0.75), rgba(166,90,46,1), rgba(166,90,46,1)), url(images/trilheiros-mob.jpg);
+  --bg-bonus: linear-gradient(to bottom, #F2A766, #A65A2E);
+  --bg-bonus-box: linear-gradient(to right, rgba(242,242,242,1), rgba(242,242,242,1),rgba(242,242,242,1), rgba(242,242,242,1), rgba(242,242,242, 1), rgba(242,242,242, 1), rgba(242,242,242, 0), rgba(242,242,242,0));
+  --bg-bonus-box-mob: linear-gradient(to top, rgba(242,242,242,1), rgba(242,242,242,1),rgba(242,242,242,1), rgba(242,242,242,1), rgba(242,242,242, 1), rgba(242,242,242, 0.75), rgba(242,242,242, 0), rgba(242,242,242,0));
+  --bg-faq: #A65A2E;
+  --bg-dark-mode-toogle: #f2f2f2;
+  --white: #ffffff;
+  --white-h: #ffffff;
+  --black: #0D0D0D;
+  --musgo: #8C8635;
+  --musgo-h :#8C8635;
+  --brown: #A65A2E;
+  --beige: #F2A766;
+  --orange: #F27F3D;
+  --lightgray: #F2F2F2;
+  --gray: #C1D4D9;
+}
+
+/* Estilizações de Cor com Variaveis - Dark Mode*/
+
+.dark-mode:root {
+  --background-body: #A65A2E;
+  --bg-gradient-home:linear-gradient(to left, rgba(166,90,46,0), rgba(166,90,46,0), rgba(166,90,46,1), rgba(166,90,46,1), rgba(166,90,46,1), rgba(166,90,46,1)), url(images/capa\ moto\ teste.jpg); 
+  --bg-gradient-home-mob:linear-gradient(to bottom, rgba(166,90,46,0), rgba(166,90,46,0), rgba(166,90,46,1), rgba(166,90,46,1), rgba(166,90,46,1)), url(images/capa\ moto\ teste.jpg);
+  --bg-gradient-home-mob2:linear-gradient(to bottom, rgba(166,90,46,0), rgba(166,90,46,0), rgba(166,90,46,1), rgba(166,90,46,1), rgba(166,90,46,1), rgba(166,90,46,1)), url(images/capa\ moto\ teste.jpg);
+  --bg-lead: url(images/shape-seta-divisoria-dark.svg), linear-gradient(to right, #403B00, #8C8635);
+  --bg-depoimentos: linear-gradient(to left, rgba(242, 167, 102, 0), rgba(242, 167, 102, 0), rgba(242, 167, 102, 0.75), rgba(242, 167, 102, 1), rgba(242, 167, 102, 1)), url(images/trilheiros.png);
+  --bg-depoimentos-mob: linear-gradient(to bottom, rgba(242, 167, 102, 0), rgba(242, 167, 102, 0), rgba(242, 167, 102, 0.75), rgba(242, 167, 102, 1), rgba(242, 167, 102, 1)), url(images/trilheiros-mob.jpg);
+  --bg-bonus: linear-gradient(to bottom, #766F12, #3D3800);
+  --bg-bonus-box: linear-gradient(to right, rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 0), rgba(140, 134, 53, 0));
+  --bg-bonus-box-mob: linear-gradient(to top, rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 1), rgba(140, 134, 53, 0.75), rgba(140, 134, 53, 0), rgba(140, 134, 53, 0));
+  --bg-faq: #572000;
+  --bg-dark-mode-toogle: #1d2122;
+  --white: #0D0D0D;
+  --white-h: #ffffff;
+  --black: #ffffff;
+  --musgo: #F27F3D;
+  --musgo-h: #ffffff;
+  --brown: #F2A766;
+  --beige: #A65A2E;
+  --orange: #572000;
+  --lightgray: #F2F2F2;
+  --gray: #A65A2E;
+}
+
+/* Estilizações de cores com marcadores de Classe para os personalização dos elementos*/
+
+.white {color: var(--white)}
+
+.white-h {color: var(--white-h);}
+
+.black {color: var(--black);}
+
+.musgo {color: var(--musgo);}
+
+.musgo-h {color: var(--musgo-h);}
+
+.brown {color: var(--brown);}
+
+.beige {color: var(--beige);}
+
+.orange {color: var(--orange);}
+
+.lightgray {color: var(--lightgray);}
+
+.gray {color: var(--gray);}
+
+
+/* Estilizações Gerais */
+
+body {
+  background-color: var(--background-body);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden
+}
+
+main {
+  width: 100%;
+}
+
+.content /* Estilo padrão de conteudo dentro de todas as seções */{
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5em;
+  padding: 10em 0em 10em 0em;
+}
+
+.button:hover {
+  filter: hue-rotate(90deg);
+  scale: 110%;
+}
+
+/* Estilização de Seções */
+
+/* Estilizações seção home */
+
+.home {
+  background-image: var(--bg-gradient-home);
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+
+.logo {
+  width: 50%;
+}
+
+.dark-mode .logo {
+  display: none; /*Retira o logo claro do dark mode */
+}
+
+.logo-dark{
+  display: none; /*Retira o logo dark do modo claro */
+}
+
+.dark-mode .logo-dark {
+  display: block;  /*Coloca o logo dark do modo dark */
+  width: 50%;
+}
+
+.home-button {
+  width: 100%;
+  padding-top: 6em;
+}
+
+/* Estilizações seção lead */
+
+.lead {
+  display: flex;
+  background-image: var(--bg-lead);
+  background-size: auto;
+  background-position: top center;
+  background-repeat: no-repeat; 
+}
+
+.leadbox-father {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.leadbox {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  row-gap: 1em;
+  border-radius: 0.5em;
+  background-color: var(--background-body);
+  box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px 0px;
+}
+
+.leadbox:hover {
+  scale: 102.5%;
+  filter: brightness(1.2);
+}
+
+/* Estilizações seção curso*/
+
+.curso {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-body);
+}
+
+.content-curso {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.img-curso-father {
+  width: 50%;
+}
+
+.img-curso {
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.img-curso:hover {
+  scale: 105%;
+}
+
+.text-curso {
+  width: 50%;
+  padding: 0 0 0 4em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+/* Estilizações seção depoimento */
+
+.depoimento {
+  display: flex;
+  flex-direction: row;
+  background-image: var(--bg-depoimentos);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.text-dep {
+  width: 45%;
+  padding: 0 4em 0 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+/* Estilizações seção Bônus*/
+
+.bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--bg-bonus);
+}
+
+.bonus-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.bonus-shape-content-father {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+}
+
+.bonus-shape /* Estilização de shape poligonal */{
+  width: 100%;
+  min-height: 3em;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.bonus-shape:hover {
+  scale: 105%;
+}
+
+ /* Estilização de imagem para cada div de bônus*/
+#bonus-1 {
+  background-image: var(--bg-bonus-box), url(images/bonus-1.jpg);
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#bonus-2 {
+  background-image: var(--bg-bonus-box), url(images/bonus-2.jpg);
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+#bonus-3 {
+  background-image: var(--bg-bonus-box), url(images/bonus-3.jpg);
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.bonus-shape-content /* Estilização de ajuste do conteudo ao shape clip-path */ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 4em 2em 8em 14em;
+  width: 80%;
+  gap: 2em;
+}
+
+  
+.bonus-shape-wrapper /* Estilização de sombra do shape do clip-path */{
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
+}
+
+.bonus-p /* Define o tamanho adequeado para que o paragrafo se ajuste com shape */{
+  width: 70%;
+}
+
+
+/* Estilizações seção Oferta*/
+
+.oferta-father {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: 2em;
+}
+
+.box-text-oferta {
+  width: 50%;
+}
+
+
+.list-itens /* Icone de lista personalizado */{
+  list-style: url('images/check.svg');
+}
+
+.list-itens li {
+  font-size: 2.4rem;
+  line-height: auto;
+  font-family: "Play";
+  text-align: left;
+  margin: 0;
+  padding-left: 1em;
+}
+
+.box-oferta-shape /* Estilização de shape poligonal */{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #FFEBD9;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.box-oferta-shape:hover {
+  scale: 105%;
+}
+
+  
+.box-oferta-shape-wrapper /* Estilização de de sombra do shape do clip-path */ {
+  width: 50%;
+  align-content: center;
+  align-items: center;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.25));
+}
+
+.box-oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 5em 2em 5em 6em;
+  gap: 2em;
+}
+
+  /* Estilizações de Preço do curso */
+
+.box-oferta .valor {
+  font-size: 3.2rem;
+  text-decoration: line-through;
+  margin-bottom: -0.5em;
+}
+
+.box-oferta .parcelas {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+.box-oferta .a-vista {
+  font-size: 3.6rem;
+}
+
+.oferta-button {
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* Estilizações seção Garantia*/
+
+.garantia {
+  margin: -5em 0em;
+}
+
+.garantia-shape /* Estilização de shape poligonal */ {
+  margin: 0em 0em 0em 0em;
+  width: 100%;
+  background-color: #F27F3D;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.garantia-shape:hover {
+  scale: 105%;
+}
+
+.shape-wrapper /* Estilização de de sombra do shape do clip-path */ {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.garantia-content-father {
+  padding: 4em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garantia-content {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 80%;
+}
+
+.selo {
+  width: fit-content;
+  align-content: center;
+  border-radius: 100%;
+  background-color: #686100;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 5px;
+}
+
+.selo:hover {
+  scale: 105%;
+  filter: hue-rotate(30deg);
+}
+
+/* Estilizações seção Sobre Mim */
+
+.sobre-mim {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--background-body);
+}
+
+.content-sobre-mim{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.img-instrutor {
+  margin: 0 1em 0 0; /* Ajuste de Imagem ao Layout */
+}
+
+.img-instrutor:hover {
+  scale: 105%;
+}
+
+
+.text-sobre-mim {
+  padding: 0 0 0 2em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+/* Estilizações seção  FAQ */
+
+.faq {
+  background-color: var(--bg-faq);
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.faq-content h1 {
+  text-align: center;
+}
+
+.cta-faq-father {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 90%;
+}
+
+.cta-faq {
+  text-align: center;
+  width: 100%;
+}
+
+.faq-button{
+  width: 100%;
+}
+
+.accordion:hover {
+  filter: brightness(1.2);
+  scale: 102.5%;
+}
+
+/* Estilizações seção  Footer */
+
+footer {
+  margin: 0 auto;
+  background-color: #572000;
+}
+
+.footer-content {
+  max-width: min(90%, 1280px);
+  margin: 0 auto;
+  row-gap: 2.5em;
+  padding: 5em 0em 5em 0em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content .link:hover{
+  filter: brightness(0.8);
+}
+
+.footer-content a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+/* Estilizações Dark Mode PopUp */
+
+.popup-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-container {
+  width: 2em;
+  height: 2em;
+  padding: 1.5em;
+  border-radius: 50%;
+  background-color: var(--bg-dark-mode-toogle);
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 5px 2px;
+}
+
+.icon {
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease;
+}
+
+.toggle-svg {
+  width: 3em;
+  height: 3em; /* Define a altura igual à largura para torná-lo um círculo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle-checkbox {
+  display: none; /* Oculta o checkbox */
+}
+
+.toggle-checkbox:checked + .toggle-label .moon-icon {
+  opacity: 1; /* Exibe o ícone do sol quando o checkbox está marcado */
+}
+
+.toggle-checkbox:not(:checked) + .toggle-label .sun-icon {
+  opacity: 1; /* Exibe o ícone da lua quando o checkbox não está marcado */
+}
+
+/* Estlizaçoes de Scrollbar */
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-track {
+   background: #572000;
+}
+ 
+::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   background: linear-gradient(180deg, #A65A2E, #F2A766);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   background: linear-gradient(0deg, #F27F3D, #F2A766);
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Estilizações de texto */
+
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+    
+  }
+
+  p.p2 {
+    font-size: 2rem;
+  }
+
+  p.p3 {
+    font-size: 1.8rem;
+  }
+  
+  .teste {
+    width: 100%;
+  }
+  
+  /* Estilização Geral */
+
+  .content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0em;
+  }
+
+  .button {
+    width: 110%;
+    margin-left: -1em;
+  }
+
+  /* Estilizações seção Home */
+
+  .home {
+    background-image: var(--bg-gradient-home-mob);
+    background-position: center top;
+  }
+  
+  .headline {
+    margin-top: 50vh;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50%;
+    display: none;
+  }
+
+  .logo-dark {
+    width: 50%;
+    display: block;
+  }
+  
+  .home-button {
+    padding-top: 6em;
+  }
+  
+  /* Estilizações seção Lead */
+
+  .lead {
+    padding: 4em 0em;
+  }
+
+  .leadbox-father {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Estilizações seção Curso */
+
+  .content-curso {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .text-curso {
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-curso-father {
+    width: 100%;
+    padding: 0 0 2em 0;
+  }
+  
+  .img-curso {
+    width: 100%;
+  }
+
+  /* Estilizações seção Curso */
+
+  .depoimento {
+    background-image: var(--bg-depoimentos-mob);
+    background-position: center top;
+  }
+
+  .text-dep {
+    margin-top: 50vh;
+    width: 100%;
+    padding: 0;
+  }
+  
+  /* Estilizações seção Bônus */
+
+  .bonus-shape-content-father {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+  }
+  
+    
+  .bonus-shape /* Estilização de shape poligonal */ { 
+    width: 100%;
+    min-height: 3em;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+  
+    /* Estilização de imagem para cada div de bônus*/
+  #bonus-1 {
+    background-image: var(--bg-bonus-box-mob), url(images/bonus-1-mob.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  #bonus-2 {
+    background-image: var(--bg-bonus-box-mob), url(images/bonus-2-mob.png);
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  #bonus-3 {
+    background-image: var(--bg-bonus-box-mob), url(images/bonus-3-mob.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .bonus-shape-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: left;
+    margin-top: 30vh;
+    padding: 1em 10% 8em 20%;
+    width: 70%;
+    gap: 2em;
+  }
+  
+  .bonus-p {
+    width: 80%;
+  }
+
+  /* Estilizações seção Oferta */
+
+  .box-text-oferta {
+    width: 100%;
+  }
+  
+
+  .box-text-oferta h1 {
+    padding-bottom: 0.5em;
+  }
+
+  .list-itens li {
+    padding-left: 0.5em;
+  }
+
+      /* Estilização de de sombra do shape do clip-path */
+  .box-oferta-shape-wrapper {
+    width: 100%;
+  }
+
+
+  .box-oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 5em 2em 5em 4em;
+    gap: 2em;
+  }
+
+  .box-oferta h1 {
+    text-align: center;
+  }
+
+    /* Estilizações de Preço do curso */
+
+  .box-oferta .valor {
+  font-size: 3rem;
+  text-decoration: line-through;
+  margin-bottom: -0.5em;
+  }
+
+  .box-oferta .parcelas {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: -0.5em;
+}
+
+  .box-oferta .a-vista {
+  font-size: 2.8rem;
+  }
+
+  .oferta-button {
+  margin-left: -1em;
+  width: 110%;
+  position: relative;
+  }
+
+  .pag {
+  width: 90%;
+  }
+
+  /* Estilizações seção Garantia */
+  
+  .garantia-content-father {
+    width: 90%;
+  }
+  
+  .garantia-content {
+    flex-direction: column;
+  }
+
+
+  /* Estilizações seção Sobre Mim */
+
+  .sobre-mim {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .content-sobre-mim{
+  flex-direction: column;
+  width: 100%;
+  }
+
+  .img-instrutor-father {
+    width: 100%;
+    padding: 2em 0;
+  }  
+
+  .img-instrutor {
+    margin: 0;
+    width: 100%;
+  }
+
+  .text-sobre-mim {
+    padding: 0;
+  }
+
+  /* Estilizações seção Footer */
+
+  .footer-content {
+    flex-wrap: wrap;
+   text-align: center;
+    justify-content: space-around;
+  }
+
+  .footer-content p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 527px) {
+
+  .home {
+    background-image: var(--bg-gradient-home-mob2);
+  }
+  
+  .headline {
+    margin-top: 25vh;
+    width: 100%;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+
+  .home {
+    background-image: var(--bg-gradient-home-mob2);
+  }
+  
+  .headline {
+    margin-top: 30vh;
+  }
+  
+}

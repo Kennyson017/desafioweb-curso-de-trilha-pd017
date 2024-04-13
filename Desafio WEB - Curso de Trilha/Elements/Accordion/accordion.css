@@ -1,0 +1,123 @@
+/*
+ Fontes Utilizadas na página:
+ "Trade Wins" - titúlos
+ "Play" - paragrafos
+ */
+
+ :root {
+    --accordion-color: #F2F2F2;
+    --span-color: #494400;
+ }
+
+ .dark-mode:root {
+    --accordion-color: #A65A2E;
+    --span-color: #F2F2F2;
+ }
+
+ .trade-winds-regular {
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accordion-father {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 90%;
+}
+
+.accordion {
+    background-color: var(--accordion-color);
+    border-radius: 5px;
+    padding: 2em 4em;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left ;
+    cursor: pointer;
+    gap: 2em;
+    padding: 0.5em 0em;
+}
+
+.accordion-header span {
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    color: var(--span-color);
+    max-width: 100%;
+    white-space: wrap;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body {
+    color: var(--span-color);
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 3em 0em 1.5em 0em;
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px){
+
+    .accordion {
+        padding: 1em 2em;
+    }
+    
+    .accordion-header {
+    gap: 1em;
+    }
+
+    .accordion-header span {
+        font-size: 2rem;
+    }
+    
+
+    .accordion-header img{
+        width: 2.5em;
+    }
+}
